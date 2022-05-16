@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>엄마생일축하해</title>
+  <!--폰트-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <style>
+    /*초기화*/
+    *{margin: 0; padding: 0;}
+    body{ font-family: sans-serif;}
+    li{ list-style: none;}
+    a{ text-decoration: none;}
+    img{ border: 0;}
+
+    /*header*/
+    #main_header{width: 960px; margin: 0 auto;
+                height: 160px; position: relative;}
+    #main_header>title{position: absolute; left: 20px; top: 30px;}
+    #main_header>#main_gnb{position: absolute; right: 0; top: 0;}
+    #main_header>#main_lnb{position: absolute; right: 0; bottom: 10px;}
+    #title{font-family: 'Nanum Brush Script', cursive; font-size: 30px;}
+
+    #main_gnb>ul{overflow: hidden;}
+    #main_gnb>ul>li{float: left;}
+    #main_gnb>ul>li>a{display: block; padding: 2px 10px; border: 1px solid black;}
+    #main_gnb>ul>li>a:hover{background: black; color: white}
+    #main_gnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
+    #main_gnb>ul>li:last-child>a{border-radius: 0 10px 10px 0;}
+
+    #main_lnb>ul{overflow: hidden;}
+    #main_lnb>ul>li{float: left;}
+    #main_lnb>ul>li>a{display: block; padding: 10px 20px; border: 1px solid black;}
+    #main_lnb>ul>li>a:hover{background: black; color: white}
+    #main_lnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
+    #main_lnb>ul>li:last-child>a{border-radius: 0 10px 10px 0;}
+
+    /*콘텐츠*/
+    #content{width: 960px; margin: 0 auto; overflow: hidden;}
+    #content>#main_section{width: 960px; float: left;}
+    #content>#main_aside{width: 0; float: right;}
+    #content>#main_section>.main_article{font-family: 'Nanum Brush Script', cursive; font-size:25px;text-align: center;}
+    #content>#main_section>.main_article:hover{background-color: orange; transition-duration: 2s;}
+
+    #main_section>article.main_article{margin-bottom: 10px; padding: 20px; border: 1px solid black; background-color: black;}
+    
+    /*사이드*/
+    input:nth-of-type(1){display: none;}
+    input:nth-of-type(1)~div:nth-of-type(1){display: none;}
+    input:nth-of-type(1):checked~div:nth-of-type(1){display: block;}
+
+    input:nth-of-type(2){display: none;}
+    input:nth-of-type(2)~div:nth-of-type(2){display: none;}
+    input:nth-of-type(2):checked~div:nth-of-type(2){display: block;}
+
+    section.buttons{overflow: hidden;}
+    section.buttons>label{display: block; float: left;
+      width: 100px; height: 30px;
+      line-height: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid black;
+      background: white;
+      color: black;
+    }
+    input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1){background: black; color: white;}
+    input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2){background: black; color: white;}
+    
+
+  </style>
+</head>
+<body>
+  <header id="main_header">
+    <div id="title">
+      <h1>어머니의 생신을 축하드립니다</h1>
+    </div>
+  </header>
+  <div id="content">
+    <section id="main_section">
+      <article class="main_article">
+        <h1>사랑하는 어머니에게</h1>
+        <p>
+          이 자리를 마련할 수 있도록<br>
+          건강한 모습으로 저희 곁에 계셔 주셔서 감사합니다.<br>
+          <br>
+          오로지 저를 위해 육십 평생을<br>
+          근심걱정으로 살아오신 어머니.<br>
+          <br>
+          아직도 소녀처럼 감수성이 풍부하시지만<br>
+          저를 위해서라면 누구보다 강한 여자가 되어<br>
+          사랑으로 따뜻하게 지켜주신 우리 어머니.<br>
+          <br>
+          예쁜 옷, 예쁜 구두, 예쁘게 화장하는 것보다<br>
+          저만을 위해 살아오시고 희생하시며 자식 잘되는 것 하나만으로도<br>
+          기뻐하시며 살아오셧던 어머니.<br>
+          <br>
+          어린아이였을 때 뿐만 아니라<br>
+          성인이 된 지금도 어머니는<br>
+          세상 어느 누구와도 비교할수없울 만큼 정말 위대하고 따뜻한 분이십니다.<br>
+          <br>
+          그런 어머니의 사랑과 희생덕분에<br>
+          오늘날의 제가 있을 수 있었습니다.<br>
+          마냥 포근했던 어머니의 그 위대한 사랑 속에서<br>
+          당연하다는 듯 보낸 철없던 지난 세월을 생각하니<br>
+          너무나 죄송스럽기만 합니다.<br>
+          <br>
+          이제는 마음 편히 쉬시며 황혼의 아름다움을<br>
+          즐기실 수 있도록 저희가 더욱 노력하겠습니다.<br>
+          <br>
+          지금까지 말없이 몸소 가르치시고 일깨워주신 사랑,<br>
+          이제는 저와 아버지가 서로 의지하고 의롭게 살아가며<br>
+          어머니께 받았던 그 사랑 돌려드리겠습니다.<br>
+          <br>
+          어머니,<br>
+          어머니가 저의 어머니라서 너무나 행복합니다.<br>
+          제 곁에 더 오래오래 건강하게 있어주세요.<br>
+          <br>
+          어머니, 항상 존경하고 감사합니다. 그리고 사랑합니다.<br>
+          오래오래 건강하세요.<br>
+        </p>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
